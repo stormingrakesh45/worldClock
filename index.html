@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog World Clock</title>
+    <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+     <div class="container">
+        <div class="clock">
+            <div style="--clr:#3C0753;--h:50px" id="hour" class="hand"><i></i></div>
+            <div style="--clr:#720455;--h:70px" id="min" class="hand"><i></i></div>
+            <div style="--clr:#030637;--h:94px" id="sec" class="hand"><i></i></div>
+            <span style="--i:1"><b>1</b></span>
+            <span style="--i:2"><b>2</b></span>
+            <span style="--i:3"><b>3</b></span>
+            <span style="--i:4"><b>4</b></span>
+            <span style="--i:5"><b>5</b></span>
+            <span style="--i:6"><b>6</b></span>
+            <span style="--i:7"><b>7</b></span>
+            <span style="--i:8"><b>8</b></span>
+            <span style="--i:9"><b>9</b></span>
+            <span style="--i:10"><b>10</b></span>
+            <span style="--i:11"><b>11</b></span>
+            <span style="--i:12"><b>12</b></span>
+        </div>
+      </div>
+
+        <div class="city-dropdown">
+         <label for="city-select">Select City:</label>
+         <select id="city-select" onchange="updateClock()">
+             <!-- Add the cities you want to display -->
+             
+             <option value="Asia/Kolkata">India</option>
+             <option value="UTC">UTC</option>
+             <option value="America/New_York">New York</option>
+             <option value="America/Los_Angeles">Los Angeles</option>
+             <option value="Europe/London">London</option>
+             <option value="Europe/Paris">Paris</option>
+             <option value="Asia/Tokyo">Tokyo</option>
+             <option value="Asia/Dubai">Dubai</option>
+             <option value="Australia/Sydney">Sydney</option>
+         </select>
+     </div>
+
+
+    
+   <script src="script.js"></script> 
+ </body>
+ </html>
